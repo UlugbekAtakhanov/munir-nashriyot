@@ -1,0 +1,68 @@
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+
+.carousel2 {
+    width: 80%;
+    margin: auto;
+    
+    .alice-carousel {
+        height: 100%;
+        
+        .div1 {
+            height: 30%;
+            
+        }
+        .div2 {
+            box-shadow: 0 0 10px black;
+            height: 70%;
+        }
+
+        .card-5 {
+            box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        }
+
+        .alice-carousel__dots-item {
+            border-radius: 50%;
+            width: .8rem;
+            height: .8rem;
+            background: #F8AD3B;
+        }
+        .alice-carousel__dots-item:not(.__custom):hover, .alice-carousel__dots-item:not(.__custom).__active {
+            background-color: red;
+        }
+
+        .alice-carousel__prev-btn {
+            position: absolute;
+            top: 35%;
+            right: 103%;
+            width: 2rem;
+            .alice-carousel__prev-btn-item {
+                color: #F8AD3B;
+                font-size: 1.9rem;
+                transition: .3s;
+                &:hover {
+                    transform: scale(1.3);
+                    color: red !important;
+                }
+            }
+        }
+
+        .alice-carousel__next-btn{
+            position: absolute;
+            top: 35%;
+            left: 103%;
+            width: 2rem;
+            .alice-carousel__next-btn-item {
+                color: #F8AD3B;
+                font-size: 1.9rem;
+                transition: .3s;
+                &:hover {
+                    transform: scale(1.3);
+                    color: red !important;
+                }
+            }
+        }
+        // .alice-carousel__next-btn-item
+
+    }
+
+}
