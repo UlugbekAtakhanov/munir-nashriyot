@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import { useGlobalContext } from '../../context'
 
@@ -14,6 +14,11 @@ const Asosiy = () => {
     // const [isSideBarOpen, setIsSideBarOpen] = useState(false)
     const {isSideBarOpen, setIsSideBarOpen} = useGlobalContext()
 
+    useEffect(() => {
+        setIsSideBarOpen(false)
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <>
             {/* container1 */}
@@ -22,13 +27,13 @@ const Asosiy = () => {
                 <div className="xl:container mx-auto px-2">
 
                     <div className=' absolute top-4 left-4 cursor-pointer sm:hidden' onClick={() => setIsSideBarOpen(true)}>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="white" viewBox="0 0 24 24" stroke="currentColor">
-                            <path className='text-white' stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="white" viewBox="0 0 24 24" stroke="currentColor">
+                            <path className='text-white' strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </div>
                     <div className="hidden language sm:flex justify-end items-center gap-4 py-3 ">
                         <Link to = "">
-                            <img className="img1 w-7" src="./images/Asset 10@2x.png" alt="" />
+                            <img className="img1 w-7" src="./images/user.png" alt="" />
                         </Link>
                         <Link to = "">
                             <img className="img2 w-12" src="./images/Asset 12@4x.png" alt="" />

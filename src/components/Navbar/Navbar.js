@@ -7,7 +7,7 @@ const Navbar = () => {
             
             <div className='sm:border-t-2 sm:border-customRed'>
                 <ul className='hidden sm:grid grid-cols-2 gap-4 lg:flex items-center sm:pb-4 lg:pb-0'>
-                    <img class="w-32" src="./images/Asset 9@3x.png" alt="" /> 
+                    <img className="w-32" src="./images/Asset 9@3x.png" alt="" /> 
                     <li className='text-white uppercase lg:bg-customRed sm:border-b lg:border-b-0 whitespace-nowrap  py-2 '>
                         <Link to = "/" className='lg:border-r border-customRed py-2 px-4 block'>
                             Yangiliklar
@@ -35,36 +35,6 @@ const Navbar = () => {
                         </li>
                 </ul>
             </div>
-            {/* <div class="">
-                <ul>
-                    <li class="">
-                        <a href="" style=" border: none;">
-                            Yangiliklar
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            Kitoblar
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            Elektron Kitoblar
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            Audio kitoblar
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="">
-                            biz bilan aloqa
-                        </a>
-                    </li>
-                </ul>
-            </div> */}
-
         </>
     )
 }

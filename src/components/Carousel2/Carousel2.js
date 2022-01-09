@@ -7,7 +7,7 @@ import {IconContext} from 'react-icons'
 
 
 const Carousel2 = () => {
-    const handleDragStart = (e) => e.preventDefault();
+    // const handleDragStart = (e) => e.preventDefault();
     const items = [
         <div data-value = "1" className=' px-8 py-16'>
             <div className='aspect-[3/4] border card-5 border-black/25 rounded-2xl overflow-hidden'>
@@ -17,9 +17,9 @@ const Carousel2 = () => {
                     </div>
                 </div>
                 <div className='div2  bg-[#EEEEEE] flex flex-col justify-center'>
-                    <p className='text-center mt-3 text-lg text-customRed'>QUR’ONI KARIM</p>
-                    <p className='text-center mb-4 text-[13px]'>Madina mus’hafi</p>
-                    <p className='text-center text-[15px] mb-2 px-2'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+                    <p className='text-center mt-3 text-lg text-customRed' style = {{fontFamily: "Arial"}}>QUR’ONI KARIM</p>
+                    <p className='text-center mb-4 text-[15px]' style={{fontFamily: "Raleway Regular"}}>Madina mus’hafi</p>
+                    <p className='text-center text-[15px] mb-2 px-2' style={{fontFamily: "Arial"}}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
                 </div>
             </div>
         </div>,
@@ -32,9 +32,9 @@ const Carousel2 = () => {
                     </div>
                 </div>
                 <div className='div2  bg-[#EEEEEE] flex flex-col justify-center'>
-                    <p className='text-center mt-3 text-lg text-customRed'>QUR’ONI KARIM</p>
-                    <p className='text-center mb-4 text-[13px]'>Madina mus’hafi</p>
-                    <p className='text-center text-[15px] mb-2 px-2'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+                    <p className='text-center mt-3 text-lg text-customRed' style = {{fontFamily: "Arial"}}>QUR’ONI KARIM</p>
+                    <p className='text-center mb-4 text-[15px]' style={{fontFamily: "Raleway Regular"}}>Madina mus’hafi</p>
+                    <p className='text-center text-[15px] mb-2 px-2' style={{fontFamily: "Arial"}}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
                 </div>
             </div>
         </div>,
@@ -47,9 +47,9 @@ const Carousel2 = () => {
                     </div>
                 </div>
                 <div className='div2  bg-[#EEEEEE] flex flex-col justify-center'>
-                    <p className='text-center mt-3 text-lg text-customRed'>QUR’ONI KARIM</p>
-                    <p className='text-center mb-4 text-[13px]'>Madina mus’hafi</p>
-                    <p className='text-center text-[15px] mb-2 px-2'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+                    <p className='text-center mt-3 text-lg text-customRed' style = {{fontFamily: "Arial"}}>QUR’ONI KARIM</p>
+                    <p className='text-center mb-4 text-[15px]' style={{fontFamily: "Raleway Regular"}}>Madina mus’hafi</p>
+                    <p className='text-center text-[15px] mb-2 px-2' style={{fontFamily: "Arial"}}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
                 </div>
             </div>
         </div>,
@@ -62,9 +62,9 @@ const Carousel2 = () => {
                     </div>
                 </div>
                 <div className='div2  bg-[#EEEEEE] flex flex-col justify-center'>
-                    <p className='text-center mt-3 text-lg text-customRed'>QUR’ONI KARIM</p>
-                    <p className='text-center mb-4 text-[13px]'>Madina mus’hafi</p>
-                    <p className='text-center text-[15px] mb-2 px-2'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+                    <p className='text-center mt-3 text-lg text-customRed' style = {{fontFamily: "Arial"}}>QUR’ONI KARIM</p>
+                    <p className='text-center mb-4 text-[15px]' style={{fontFamily: "Raleway Regular"}}>Madina mus’hafi</p>
+                    <p className='text-center text-[15px] mb-2 px-2' style={{fontFamily: "Arial"}}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
                 </div>
             </div>
         </div>,
@@ -77,9 +77,9 @@ const Carousel2 = () => {
                     </div>
                 </div>
                 <div className='div2  bg-[#EEEEEE] flex flex-col justify-center'>
-                    <p className='text-center mt-3 text-lg text-customRed'>QUR’ONI KARIM</p>
-                    <p className='text-center mb-4 text-[13px]'>Madina mus’hafi</p>
-                    <p className='text-center text-[15px] mb-2 px-2'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+                    <p className='text-center mt-3 text-lg text-customRed' style = {{fontFamily: "Arial"}}>QUR’ONI KARIM</p>
+                    <p className='text-center mb-4 text-[15px]' style={{fontFamily: "Raleway Regular"}}>Madina mus’hafi</p>
+                    <p className='text-center text-[15px] mb-2 px-2' style={{fontFamily: "Arial"}}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
                 </div>
             </div>
         </div>,
@@ -92,7 +92,7 @@ const Carousel2 = () => {
 
     return (
         <IconContext.Provider value = {{size: "30px", color: "hsl(205, 77%, 27%)"}}>
-            <div className = "carousel2 ">
+            <div className = "carousel2">
                     <AliceCarousel 
                         mouseTracking
                         items={items} 
